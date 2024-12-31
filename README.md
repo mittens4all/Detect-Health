@@ -22,7 +22,7 @@ execute as @a[scores={detect_health=1}] at @s run <your-command-here>
 ## Gratitudes
 
 - [FatalConfuzion]
-- [Bedrock Add-Ons Discord]((https://discord.gg/46JUdQb))
+- [Bedrock Add-Ons Discord](https://discord.gg/46JUdQb)
 
 ```js
        _                              _     _       _ _  
