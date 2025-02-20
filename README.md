@@ -10,9 +10,13 @@ Re-enable achievements on either pc or mobile with the free NBT editor [Dovetail
 
 ## How to Use
 
-You can display the scoreboard objective `detect_health` or target players using the scores as part of the target selector arguments:
+You can display the scoreboard objective `detect:health` or target players using the scores as part of the target selector arguments:
 ```js
-execute as @a[scores={detect_health=1}] at @s run <your-command-here>
+/scoreboard objectives setdisplay sidebar detect:health
+
+titleraw @a actionbar {"rawtext":[{"text":"Health: "}, {"score":{"name":"*", "objective":"detect:health"}}]}
+
+execute as @a[scores={detect:health=20}] at @s run <your-command-here>
 ```
 ## Author
 
@@ -21,7 +25,6 @@ execute as @a[scores={detect_health=1}] at @s run <your-command-here>
 
 ## Gratitudes
 
-- [FatalConfuzion]
 - [Bedrock Add-Ons Discord](https://discord.gg/46JUdQb)
 
 ```js
